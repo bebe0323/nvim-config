@@ -20,10 +20,10 @@ return {
 
       local lspconfig = require("lspconfig")
       lspconfig.omnisharp.setup({
-        -- capabilities = capabilities,
+        capabilities = capabilities,
       })
       lspconfig.lua_ls.setup({
-        -- capabilities = capabilities,
+        capabilities = capabilities,
       })
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
